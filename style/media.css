@@ -1,0 +1,25 @@
+
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
+    .navbar__header {
+        transform: translateY(0);
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 576px) {
+    .navbar__header {
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .navbar__header .container {
+        padding: 10px 10px;
+    }
+}

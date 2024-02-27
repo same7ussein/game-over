@@ -1,0 +1,255 @@
+/* ************ Root Variabls********** */
+:root {
+    --header-font: 'Nerko One', cursive;
+    --text-font: 'Comfortaa', sans-serif;
+    --main-color: #3A497B;
+}
+
+/* ********** Global ********* */
+
+body {
+    font-family: var(--text-font);
+    background-color: #272B30;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+    font-family: var(--header-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* ***** scroll bar ***** */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #32383e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #262a2f;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+
+/* ************** loading screen ********** */
+body {
+    overflow: hidden;
+}
+
+.loadingScreen {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #272B30;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999999999999999;
+}
+
+.spin__red {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-right: 5px solid #ff3d00;
+}
+
+.spin__white {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 5px solid white;
+}
+
+/* ******** navbar ********* */
+header {
+    height: 30vh;
+}
+
+header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar__header {
+    transform: translateY(-50%);
+    position: sticky;
+    top: 34px;
+    z-index: 100;
+}
+
+.navbar__header .container {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 10px 50px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+.card-text {
+    color: #888A8D;
+    font-size: 14px;
+}
+
+.logo__header img {
+    width: 45px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 500;
+    cursor: auto;
+}
+
+.logo,
+.navbar__header a {
+    color: white;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover,
+.nav-link:focus {
+    color: white;
+}
+
+.navbar-nav a {
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #09c;
+}
+
+.nav-link:hover {
+    color: #09c;
+}
+
+.card {
+    background-color: transparent;
+    color: white;
+    padding: 22px;
+    padding-bottom: 0;
+    transition: scale 0.5s;
+    margin-bottom: 25px;
+}
+
+.card img {
+    filter: grayscale();
+    transition: filter 0.5s;
+}
+
+.card:hover {
+    scale: 1.05;
+}
+
+.card:hover img {
+    filter: grayscale(0);
+}
+
+.card:hover .badge__free {
+    background-color: rgb(13, 110, 253);
+}
+
+
+.card-body {
+    padding: 20px 0;
+    height: 155px;
+}
+
+.badge__free {
+    background-color: #4A6792;
+    transition: background-color 0.5s;
+}
+
+.card-text:last-child {
+    text-align: center;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.card-footer span {
+    background-color: #32383E;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+/* ************* Details page ********* */
+
+.details {
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #272B30;
+    z-index: 99999999;
+    overflow: auto;
+}
+
+.details__content img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.head__title i {
+    cursor: pointer;
+    font-size: 30px;
+    color: #828f8f;
+    transition: color 0.5s;
+}
+.head__title i:hover {
+    color: #c4cccc;
+}
+.details__content p {
+    margin: 0;
+}
+
+.details__content span {
+    background-color: #0DCAF0;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.details__content button {
+    color: white;
+    font-weight: 700;
+}
+
+.details__content button:hover {
+    color: white;
+}
+
+
+.card__game {
+    cursor: pointer;
+}
